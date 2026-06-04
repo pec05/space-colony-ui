@@ -1,0 +1,25 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #0d1224 !important;
+  border-bottom: 1px solid #1e3a5f;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+
+  .brand {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    letter-spacing: 3px;
+    color: #7c9dff;
+    text-shadow: 0 0 20px rgba(124, 157, 255, 0.5);
+
+    &:hover { color: #a0baff; }
+  }
+
+  .username {
+    font-size: 0.85rem;
+    color: #6b7fa8;
+    margin-right: 4px;
+  }
+}

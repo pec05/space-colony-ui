@@ -1,1 +1,46 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #0a0e1a;
+  color: #c8d6f0;
+  min-height: 100vh;
+}
+
+.full-width { width: 100%; }
+.spacer     { flex: 1 1 auto; }
+
+.error-message {
+  color: #ff6b6b;
+  font-size: 0.85rem;
+  margin-bottom: 12px;
+  padding: 10px 12px;
+  background: rgba(255, 107, 107, 0.1);
+  border-radius: 4px;
+  border-left: 3px solid #ff6b6b;
+}
+
+/* Make Material form fields readable on dark background */
+.mat-mdc-form-field {
+  --mdc-filled-text-field-label-text-color: #90a4c8;
+  --mdc-outlined-text-field-label-text-color: #90a4c8;
+  --mdc-outlined-text-field-input-text-color: #e0ecff;
+  --mdc-outlined-text-field-outline-color: #2a3a5c;
+  --mdc-outlined-text-field-hover-outline-color: #4a6fa5;
+  --mdc-outlined-text-field-focus-outline-color: #7c9dff;
+}
+
+input.mat-mdc-input-element {
+  color: #e0ecff !important;
+  caret-color: #7c9dff;
+}
+
+.mat-mdc-card {
+  --mdc-elevated-card-container-color: #111827;
+}

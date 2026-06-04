@@ -1,0 +1,85 @@
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 64px);
+  padding: 24px;
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(30, 60, 120, 0.3) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba(60, 20, 100, 0.2) 0%, transparent 50%),
+    #0a0e1a;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  background: #111827 !important;
+  border: 1px solid #1e3a5f;
+  border-radius: 12px !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(124, 157, 255, 0.1) !important;
+
+  mat-card-header {
+    padding: 28px 24px 8px;
+
+    mat-card-title {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.4rem;
+      color: #7c9dff;
+      letter-spacing: 2px;
+      margin-bottom: 4px;
+    }
+
+    mat-card-subtitle {
+      color: #6b7fa8 !important;
+      font-size: 0.9rem;
+    }
+  }
+
+  mat-card-content {
+    padding: 20px 24px;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+  }
+
+  mat-card-actions {
+    padding: 8px 24px 20px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    color: #6b7fa8;
+    font-size: 0.875rem;
+
+    a {
+      color: #7c9dff;
+      text-decoration: none;
+      font-weight: 500;
+
+      &:hover {
+        color: #a0baff;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  button[mat-raised-button] {
+    margin-top: 8px;
+    padding: 10px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #3a5fad, #1a3a7a) !important;
+    color: #e0ecff !important;
+    border-radius: 6px !important;
+
+    &:hover:not(:disabled) {
+      background: linear-gradient(135deg, #4a6fbd, #2a4a8a) !important;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+    }
+  }
+}
